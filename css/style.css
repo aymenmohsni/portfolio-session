@@ -1,0 +1,189 @@
+:root{
+	--main-dark:#222;
+	--white:#fff;
+	--nav-col:#efefef;
+	--nav-col-hov:#444;
+	--hero-col:#001;
+	--title-col:#777;
+	--footer-second-col: #88f
+  }
+.hero {
+	min-height: 500px;
+	text-align: center;
+	background-color: var(--hero-col);
+}
+
+.hero-content{
+	color: var(--white);
+	padding-top: 120px;
+}
+
+.hero-content h1 {
+	font-size: 100px;
+	margin: 0;
+}
+
+.hero-content p {
+	font-size: 50px;
+}
+
+.hero-content a {
+	display: inline-block;
+	color: var(--white);
+	border:3px solid var(--white);
+	border-radius: 5px;
+	padding: 15px 30px;
+	margin-right: 20px;
+	text-decoration: none;
+	font-size: 30px
+}
+
+.hero-content a:hover {
+	color: var(--hero-col);
+	background-color: var(--white);
+}
+
+
+/* site section */
+.site-section {
+	padding-bottom: 50px;
+	padding-top: 50px;
+}
+
+.site-section-secondary {
+	background:var(--nav-col);
+}
+
+.site-section-inside {
+	width: 80%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.section-header {
+	text-align: center;
+	margin-bottom: 30px
+}
+
+.section-header h2 {
+	font-size: 30px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-weight: 300;
+	color: var(--title-col);
+}
+
+
+/*skills boxes */
+.project-container{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	text-align: center;
+	justify-content: space-between;
+
+}
+.project-box {
+	display: inline-block;
+	width: 30%;
+	padding: 20px 30px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	margin: 10px;
+}
+.project-box a{
+	text-decoration: none;
+}
+.project-box h5 {
+	font-weight: bold;
+	font-size: 20px;
+	color: #999;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin:0;
+}
+
+.project-box img {
+	width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.project-box img:hover {
+	opacity: 0.8;
+    cursor: pointer;
+}
+/* skills section */
+.skills-container{
+	display: grid;
+  	grid-template-columns: auto auto auto auto;
+  	gap: 10px;
+	align-items: center;
+	text-align: center;
+	justify-content: space-between;
+	padding: 0 20px;
+	width: 60%;
+	margin: auto;
+}
+
+@media (max-width:900px) {
+	.project-container{
+		flex-direction: column;
+	}
+	.project-box{
+		width: 70%;
+	}
+}
+.btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+}
+
+.btn button {
+	height: 80px;
+	width: 170px;
+	color: var(--white);
+	border:3px solid var(--white);
+	background-color: var(--hero-col);
+	border-radius: 15px;
+	padding: 15px 30px;
+	margin-right: 20px;
+	text-decoration: none;
+	font-size: 20px
+}
+
+.btn button:hover {
+	color: var(--hero-col);
+	background-color: var(--white);
+	border-color: var(--main-dark);
+	cursor: pointer;
+}
+
+
+/* Hire me */
+.hire{
+	text-align: center;
+	margin-bottom: 30px
+}
+
+.hire h1{
+	font-size: 30px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-weight: 300;
+	color: var(--title-col)
+}
+.hire button {
+	background-color: #333;
+	color: var(--white);
+	padding: 10px 15px;
+	border:none;
+	width: 20%;
+	border-radius: 20px
+}
+.hire button:hover {
+	background-color: var(--hero-col);
+	color: var(--white);
+	cursor: pointer;
+}

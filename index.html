@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aymen Mohsni</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/nav.css">
+	<link rel="shortcut icon" href="img/aymen.png" type="image/x-icon"> 
+
+</head>
+<body>
+
+	<!-- Header -->
+	<header>
+		<nav class="nav">
+			<input type="checkbox" id="nav-check">
+			<div class="nav-header">
+			  <div class="nav-title">
+				<a href="index.html">
+					<img src="img/aymen.png" alt="">
+					<!-- My portfolio -->
+				</a>
+			  </div>
+			</div>
+			<div class="nav-btn">
+			  <label for="nav-check">
+				<span></span>
+				<span></span>
+				<span></span>
+			  </label>
+			</div>
+			
+			<ul class="nav-list">
+			  <li><a href="index.html">Home</a></li>
+			  <li><a href="projects.html">Projects</a></li>
+			  <li><a href="skills.html">Skills</a></li>
+			  <li><a href="#">Experiences</a></li>
+			  <li><a href="#">Education</a></li>
+			</ul>
+		  </nav>
+		<!-- nav -->
+	</header>
+
+	<!-- main content -->
+	<main>
+		<div class="hero" id="top">
+			<div class="hero-content">
+				<h1 class="hero-title">Aymen Mohsni</h1>
+				<p>Web Developer</p>
+				<a href="#bottom">Learn More</a>
+			</div>
+		</div>
+
+
+		<!-- Projects -->
+
+		<div class="site-section" id="bottom">
+			<div class="site-section-inside">
+				<div class="section-header">
+					<h2>My Projects</h2>
+				</div>
+				<div class="project-container">
+					<div class="project-box">
+						<a href="">
+							<img src="img/pfehub.png" alt="">
+							<h5>PFE Hub</h5>
+						</a>
+						<p>Description </p>
+					</div>
+
+					<div class="project-box">
+						<a href="">
+							<img src="img/project2.png" alt="">
+							<h5>Project2</h5>
+						</a>
+						<p>Description </p>
+					</div>
+
+					<div class="project-box">
+						<a href="">
+							<img src="img/project3.png" alt="">
+							<h5>Project3</h5>
+						</a>
+						<p>Description </p>
+					</div>
+
+				</div>
+				<div class="btn">
+					<button onclick="window.location.href='projects.html'">See more</button>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- Skills --> 
+		<div class="site-section site-section-secondary">
+			<div class="site-section-inside">
+
+				<div class="section-header">
+					<h2>My skills</h2>
+				</div>
+				<div class="skills-container">
+					<div class="skills-box">
+						<h5>HTML</h5>
+					</div>
+					<div class="skills-box">
+						<h5>CSS</h5>
+					</div>
+					<div class="skills-box">
+						<h5>JS</h5>
+					</div>
+					<div class="skills-box">
+						<h5>Git & Github</h5>
+					</div>
+					<div class="skills-box">
+						<h5>SASS</h5>
+					</div>
+					<div class="skills-box">
+						<h5>ReactJS</h5>
+					</div>
+					<div class="skills-box">
+						<h5>NodeJS</h5>
+					</div>
+					<div class="skills-box">
+						<h5>ExpressJS</h5>
+					</div>
+					<div class="skills-box">
+						<h5>NextJS</h5>
+					</div>
+				</div>
+								
+			</div>
+		</div>
+
+		<!-- Hire me -->
+		<div class="hire">
+			<h1>Hire me</h1>
+			<p>Feel free to contact me via Email</p>
+			
+			<button onclick="display()">Contact me</button>
+			<p id="test"></p>
+			<script>
+	
+			function display() {
+			document.getElementById("test").innerHTML= 'unavailable now';
+			}
+			
+			</script>
+
+			
+
+		</div>
+ 
+	</main>
+
+
+	<!-- footer -->
+
+	<footer>
+		<span>My Website <br> Copyright &copy; 2022 by <a href="https://www.facebook.com/aymen.mohsni06" target="_blank"> Aymen Mohsni </a></span>
+		<a href="#top">Return to top</a>
+	</footer>
+
+</body>
+</html>
